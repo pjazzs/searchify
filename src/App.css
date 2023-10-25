@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +39,71 @@
     transform: rotate(360deg);
   }
 }
+
+.marq{
+  background-image: linear-gradient(rgba(17, 25, 255, 0.478), #222);
+  animation: marg 1s infinite ease-in-out;
+}
+
+@keyframes marg {
+      0%{
+        color: rgb(17, 25, 255);
+        letter-spacing: 1px;
+      }
+      50%{
+        color: crimson;
+        letter-spacing: 1.5px;
+      }
+      100%{
+        color:gray;
+        letter-spacing: 2px;
+      }
+}
+
+.background-img{
+  background-image: url(/public/pixel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 86vh;
+  z-index: 1;
+}
+
+.background-img::after{
+  content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: .7;
+    z-index: -1;
+}
+
+.font{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.shadow{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.textarea-container {
+  max-height: 200px; 
+  overflow: hidden;
+  /* border: 1px solid #fff; */
+  /* background-color: red; */
+  margin-top: 5em
+}
+
+.fow{
+  overflow: hidden
+}
+  
+  
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
